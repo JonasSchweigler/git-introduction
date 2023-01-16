@@ -79,3 +79,101 @@ Danach kopiere diese Befehle und führe sie im Terminal einmal aus:
 4. Übungsbeispiel
 
 ---
+---
+
+
+
+# Code Snippets 
+
+Beans-Klasse "Person.java":
+```java
+package at.htlkaindorf.beans;
+
+public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s - %d - %s", name, age);
+    }
+}
+```
+
+UI-Klasse "Main.java":
+```java
+package at.htlkaindorf.ui;
+
+import at.htlkaindorf.beans.Person;
+
+public class Main {
+    public static void main(String[] args) {
+        Person jan = new Person("Jan Fofnjka", 16);
+        System.out.println("Name - Age");
+        System.out.println(jan);
+    }
+}
+```
+
+## Ablauf des Version-Controls
+
+1.) Neuen Zweig "person-class" erstellen
+```git
+git checkout -b person-class
+```
+2.) Den Code in die richtige Datei einfügen 
+
+3.) Die Veränderungen ansehen und hinzufügen:
+```git
+git status
+git add .
+```
+
+4.) Einen "Commit" ausführen
+```git
+git commit -m "created Person.java"
+```
+
+4.) Einen weiteren Branch für die Main-Klasse erstellen
+```git
+git checkout master
+git checkout -b main-class
+```
+
+5.) Den Code einfügen
+
+
+6.) Die Veränderungen ansehen und hinzufügen:
+```git
+git status
+git add .
+```
+
+7.) Einen "Commit" ausführen
+```git
+git commit -m "created Main.java"
+```
+
+
