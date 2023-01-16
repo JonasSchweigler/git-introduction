@@ -158,7 +158,7 @@ git commit -m "created Person.java"
 
 4.) Einen weiteren Branch für die Main-Klasse erstellen
 ```git
-git checkout master
+git checkout main
 git checkout -b main-class
 ```
 
@@ -176,4 +176,20 @@ git add .
 git commit -m "created Main.java"
 ```
 
+8.) Die beiden Branches EXTRA pushen (zur Demonstation)
+```git
+git push -u origin person-class
+git push -u origin main-class
+```
+
+9.) Überprüfe ob die beiden Branches in deinem Remote-Repo (Github) existieren
+
+
+10.) Zusammenführen der Branches (lokal)
+
+```git
+git checkout main
+git merge person-class
+git merge main-class
+```
 
