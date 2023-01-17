@@ -153,6 +153,7 @@ git add .
 
 4.) Einen "Commit" ausführen
 ```git
+git add .
 git commit -m "created Person.java"
 ```
 
@@ -173,6 +174,7 @@ git add .
 
 7.) Einen "Commit" ausführen
 ```git
+git add .
 git commit -m "created Main.java"
 ```
 
