@@ -193,3 +193,19 @@ git merge main-class
 ```
 
 11.) Zusammenfügen der Branches (remote) mittels PR (Pull-Request)
+
+# Empfohlenes Branching-System
+```
+Branch System:
+
+main
+  dev
+    feature
+      /example
+    bug
+      /example
+
+  release(beta)
+
+master (main) for production
+```
