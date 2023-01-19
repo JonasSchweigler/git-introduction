@@ -153,13 +153,11 @@ git add .
 
 4.) Einen "Commit" ausführen
 ```git
-git add .
 git commit -m "created Person.java"
 ```
 
 4.) Einen weiteren Branch für die Main-Klasse erstellen
 ```git
-git checkout main
 git checkout -b main-class
 ```
 
@@ -174,7 +172,6 @@ git add .
 
 7.) Einen "Commit" ausführen
 ```git
-git add .
 git commit -m "created Main.java"
 ```
 
@@ -195,3 +192,4 @@ git merge person-class
 git merge main-class
 ```
 
+11.) Zusammenfügen der Branches (remote) mittels PR (Pull-Request)
